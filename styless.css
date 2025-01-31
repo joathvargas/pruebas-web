@@ -1,0 +1,24 @@
+h1 {
+    background-color: blue;
+    color: white
+}
+
+p {
+    border: 1px solid gray;
+}
+
+a[href*="youtube"] {
+    background-color: tomato;
+}
+
+a[href^="#"] {
+    background-color: pink;
+}
+
+div p {
+    background-color: tomato;
+}
+
+div.header ~ div {
+    background-color: aqua;
+}
