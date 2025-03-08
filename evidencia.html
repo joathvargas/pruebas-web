@@ -4,69 +4,261 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda de Videojuegos</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2, h3, h4 {
+            color: #2c3e50;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-size: 2em;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        h4 {
+            font-size: 1.2em;
+            margin-bottom: 5px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+            background-color: #3498db;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        ul li a:hover {
+            background-color: #2980b9;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        button {
+            display: block;
+            margin: 10px auto;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        p {
+            text-align: center;
+            font-size: 1.1em;
+            margin: 20px 0;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+        }
+
+        form button:hover {
+            background-color: #2980b9;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .section:hover {
+            transform: translateY(-5px);
+        }
+
+        .section img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .section h4 {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .section h3 {
+            text-align: center;
+            color: #e74c3c;
+        }
+
+        .section p {
+            text-align: center;
+            font-size: 1.1em;
+            margin: 20px 0;
+        }
+
+        .section button {
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
-    <h1 style="text-align: center;">Tienda de Videojuegos</h1>
-    <h3 style="text-align: center;">Somos una tienda especializada en venta de videojuegos físicos o digitales online</h3>
-    
-    <h2><center>Categorías</center></h2>
-    <ul>
-        <li><a href="#playstation">PlayStation</a></li>
-        <li><a href="#xbox">Xbox</a></li>
-        <li><a href="#nintendo">Nintendo</a></li>
-    </ul>
-    
-   
-    <h2 id="playstation"><center>Sección de PlayStation</center></h2>
-    <img src="https://mx.static.webuy.com/product_images/Juegos/PS5%20Consolas/SPS5825GBW001_l.jpg" alt="Consola PlayStation" width="300">
-    <h4>Play Station 5</h4>
-    <h3>Precio = $10,000</h3>
-    <button>comprar</button>    
-    <p>Explora nuestra colección de juegos para PlayStation.</p> <br>
-    <img src="https://m.media-amazon.com/images/I/81Pagnfx1DL._AC_UF1000,1000_QL80_.jpg" alt="God of war" width="200">
-    <h4>God of war ragnarok</h4>
-    <h3>Precio = $1200</h3>
-    <button>comprar</button> 
+    <div class="container">
+        <center><h1>Tienda de Videojuegos online</h1></center>
+        <center><h3>Somos una tienda especializada en venta de videojuegos físicos o digitales online</h3></center>
+        
+        <center><h2>Categorías</h2></center>
+        <ul>
+            <li><a href="#playstation">PlayStation</a></li>
+            <li><a href="#xbox">Xbox</a></li>
+            <li><a href="#nintendo">Nintendo</a></li>
+        </ul>
+        
+        <div class="section" id="playstation">
+            <h2>Sección de PlayStation</h2>
+            <img src="https://mx.static.webuy.com/product_images/Juegos/PS5%20Consolas/SPS5825GBW001_l.jpg" alt="Consola PlayStation" width="300">
+            <h4>Play Station 5</h4>
+            <h3>Precio = $10,000</h3>
+            <button>Comprar</button>    
+            <p>Explora nuestra colección de juegos para PlayStation.</p> <br>
+            <img src="https://m.media-amazon.com/images/I/81Pagnfx1DL._AC_UF1000,1000_QL80_.jpg" alt="God of war" width="200">
+            <h4>God of War Ragnarok</h4>
+            <h3>Precio = $1200</h3>
+            <button>Comprar</button> 
+        </div>
 
+        <div class="section" id="xbox">
+            <h2>Sección de Xbox</h2>
+            <img src="https://http2.mlstatic.com/D_NQ_NP_942133-MLA74651936102_022024-O.webp" alt="Consola Xbox" width="300">
+            <h4>Xbox Series X</h4> 
+            <h3>Precio = $7000</h3>
+            <button>Comprar</button>
+            <p>Descubre los últimos lanzamientos para Xbox.</p>
+            <img src="https://www.juegosdigitalesmexico.mx/files/images/productos/1718047291-call-of-duty-black-ops-6-xbox-series-xs-pre-orden-0.webp" alt="call of duty black ops 6 xbox" width="200">
+            <h4>Call of Duty Black Ops 6</h4>
+            <h3>Precio = $1500</h3>
+            <button>Comprar</button> 
+        </div>
 
+        <div class="section" id="nintendo">
+            <h2>Sección de Nintendo</h2>
+            <img src="https://m.media-amazon.com/images/I/51Gz7IimgoL.jpg" alt="Consola Nintendo" width="300">
+            <h4>Nintendo Switch</h4> 
+            <h3>Precio = $5000</h3>
+            <button>Comprar</button>
+            <p>Encuentra los mejores juegos de Nintendo aquí.</p>
+            <img src="https://m.media-amazon.com/images/I/81gTTc2IpCL.jpg" alt="Super Smash Bros" width="250">
+            <h4>Super Smash Bros Ultimate</h4>
+            <h3>Precio = $700</h3>
+            <button>Comprar</button> 
+        </div>
 
-    
-    <h2 id="xbox"><center>Sección de Xbox</center></h2>
-    <img src="https://http2.mlstatic.com/D_NQ_NP_942133-MLA74651936102_022024-O.webp" alt="Consola Xbox" width="300">
-    <h4>Xbox Series X</h4> 
-    <h3>Precio = $7000</h3>
-    <button>comprar</button>
-    <p>Descubre los últimos lanzamientos para Xbox.</p>
-    <img src="https://www.juegosdigitalesmexico.mx/files/images/productos/1718047291-call-of-duty-black-ops-6-xbox-series-xs-pre-orden-0.webp" alt="call of duty blach ops 6 xbox" width="200">
-    <h4>call of duty blach ops 6</h4>
-    <h3>Precio = $1500</h3>
-    <button>comprar</button> 
-
-
-
-    
-    <h2 id="nintendo"><center>Sección de Nintendo</center></h2>
-    <img src="https://m.media-amazon.com/images/I/51Gz7IimgoL.jpg" alt="Consola Nintendo" width="300">
-    <h4>Nintendo switch</h4> 
-    <h3>Precio = $5000</h3>
-    <button>comprar</button>
-    <p>Encuentra los mejores juegos de Nintendo aquí.</p>
-    <img src="https://m.media-amazon.com/images/I/81gTTc2IpCL.jpg" alt="Super smash bros" width="250">
-    <h4>Super smash bros ultimate</h4>
-    <h3>Precio = $700</h3>
-    <button>comprar</button> 
-
-
-    
-    <h2><center>Contacto</center></h2>
-    <form>
-        <label for="nombre"><center>Nombre</center>:</label>
-        <center><input type="text" id="nombre" name="nombre"><br></center>
-        <label for="correo"><center>Correo</center>:</label>
-        <center><input type="email" id="correo" name="correo"><br></center>
-        <label for="mensaje"><Center>Mensaje</Center>:</label><br>
-        <center><textarea id="mensaje" name="mensaje" rows="4" cols="50"></textarea><br></center>
-       <center> <button type="submit">Enviar</button> </center>
-    </form>
+        <div class="section">
+            <h2>Contacto</h2>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo" required>
+                
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
